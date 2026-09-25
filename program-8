@@ -1,0 +1,16 @@
+data <- read.csv("data.csv")
+
+cat("CSV Data:\n")
+print(data)
+
+cat("Structure:\n")
+str(data)
+
+cat("Summary:\n")
+print(summary(data))
+
+cat("Number of Rows:", nrow(data), "\n")
+cat("Number of Columns:", ncol(data), "\n")
+
+cat("Mean of Numeric Data:\n")
+print(sapply(data, mean, na.rm=TRUE))
