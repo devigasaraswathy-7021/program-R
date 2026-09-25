@@ -1,0 +1,14 @@
+marks <- c(75, 80, 65, 90, 85, 70, 95, 60, 88, 78)
+
+data <- data.frame(Student=1:10, Marks=marks)
+
+print(data)
+
+cat("Mean =", mean(marks), "\n")
+cat("Median =", median(marks), "\n")
+cat("Minimum =", min(marks), "\n")
+cat("Maximum =", max(marks), "\n")
+cat("Variance =", var(marks), "\n")
+cat("Standard Deviation =", sd(marks), "\n")
+cat("Summary:\n")
+print(summary(marks))
