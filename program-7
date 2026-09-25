@@ -1,0 +1,14 @@
+v <- c(10, 20, 30, 40, 50)
+cat("Vector:", v, "\n")
+
+l <- list(Name="Devi", Age=20, Mark=85)
+cat("List:\n")
+print(l)
+
+df <- data.frame(
+  Name=c("A","B","C"),
+  Age=c(20,21,22),
+  Mark=c(80,90,85)
+)
+cat("Data Frame:\n")
+print(df)
