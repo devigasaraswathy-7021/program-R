@@ -1,0 +1,11 @@
+str <- "Hello World"
+
+cat("Original:", str, "\n")
+cat("Length:", nchar(str), "\n")
+cat("Uppercase:", toupper(str), "\n")
+cat("Lowercase:", tolower(str), "\n")
+cat("Substring:", substr(str, 1, 5), "\n")
+cat("Replace:", sub("World", "R", str), "\n")
+cat("Trim:", trimws("  Hello  "), "\n")
+cat("Repeat:", paste(rep("Hi", 3), collapse=" "), "\n")
+cat("Concatenate:", paste("Hello", "R"), "\n")
