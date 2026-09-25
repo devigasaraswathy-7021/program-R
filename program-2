@@ -1,0 +1,19 @@
+choice <- as.integer(readline("1.Rectangle 2.Square 3.Circle 4.Triangle: "))
+
+if (choice == 1) {
+  l <- as.numeric(readline("Enter length: "))
+  b <- as.numeric(readline("Enter breadth: "))
+  cat("Area =", l * b)
+} else if (choice == 2) {
+  s <- as.numeric(readline("Enter side: "))
+  cat("Area =", s * s)
+} else if (choice == 3) {
+  r <- as.numeric(readline("Enter radius: "))
+  cat("Area =", pi * r * r)
+} else if (choice == 4) {
+  b <- as.numeric(readline("Enter base: "))
+  h <- as.numeric(readline("Enter height: "))
+  cat("Area =", 0.5 * b * h)
+} else {
+  cat("Invalid choice")
+}
