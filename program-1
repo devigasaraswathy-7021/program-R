@@ -1,0 +1,13 @@
+choice <- as.integer(readline("1. F to C  2. C to F : "))
+
+temp <- as.numeric(readline("Enter temperature: "))
+
+if (choice == 1) {
+  celsius <- (temp - 32) * 5/9
+  cat("Temperature in Celsius =", celsius)
+} else if (choice == 2) {
+  fahrenheit <- (temp * 9/5) + 32
+  cat("Temperature in Fahrenheit =", fahrenheit)
+} else {
+  cat("Invalid choice")
+}
