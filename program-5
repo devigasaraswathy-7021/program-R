@@ -1,0 +1,9 @@
+df1 <- data.frame(Name=c("A","B"), Age=c(20,21))
+df2 <- data.frame(Mark=c(80,90))
+
+df3 <- cbind(df1, df2)
+print(df3)
+
+df4 <- data.frame(Name=c("C"), Age=c(22), Mark=c(85))
+df5 <- rbind(df3, df4)
+print(df5)
