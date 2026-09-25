@@ -1,0 +1,21 @@
+values <- c(30, 20, 25, 25)
+labels <- c("Python", "Java", "R", "C++")
+
+names(values) <- labels
+
+print(values)
+
+pie(values,
+    labels = labels,
+    main = "Programming Language Usage",
+    col = rainbow(4))
+
+barplot(values,
+        names.arg = labels,
+        main = "Programming Language Usage",
+        xlab = "Languages",
+        ylab = "Number of Students",
+        col = rainbow(4),
+        border = "black")
+
+cat("Pie chart and Bar chart created successfully")
